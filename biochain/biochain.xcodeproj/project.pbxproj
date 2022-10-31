@@ -18,6 +18,10 @@
 		EA33284E290F1EEB00F4573D /* biochainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33284D290F1EEB00F4573D /* biochainUITests.swift */; };
 		EA332850290F1EEB00F4573D /* biochainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33284F290F1EEB00F4573D /* biochainUITestsLaunchTests.swift */; };
 		EA33285D290F2AD000F4573D /* BiochainSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */; };
+		EA33285F290F8BB900F4573D /* MyBioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33285E290F8BB800F4573D /* MyBioTableViewController.swift */; };
+		EA332861290F8BD400F4573D /* MyBiochainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */; };
+		EA332863290F8BF900F4573D /* AddBlockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */; };
+		EA332865290F8C1800F4573D /* MyRewardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		EA33284D290F1EEB00F4573D /* biochainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biochainUITests.swift; sourceTree = "<group>"; };
 		EA33284F290F1EEB00F4573D /* biochainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biochainUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiochainSignupViewController.swift; sourceTree = "<group>"; };
+		EA33285E290F8BB800F4573D /* MyBioTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBioTableViewController.swift; sourceTree = "<group>"; };
+		EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBiochainTableViewController.swift; sourceTree = "<group>"; };
+		EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlockTableViewController.swift; sourceTree = "<group>"; };
+		EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRewardsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				EA33283A290F1EEB00F4573D /* Info.plist */,
 				EA332832290F1EE900F4573D /* biochain.xcdatamodeld */,
 				EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */,
+				EA33285E290F8BB800F4573D /* MyBioTableViewController.swift */,
+				EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */,
+				EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */,
+				EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */,
 			);
 			path = biochain;
 			sourceTree = "<group>";
@@ -264,10 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA332865290F8C1800F4573D /* MyRewardsTableViewController.swift in Sources */,
 				EA33282E290F1EE900F4573D /* ViewController.swift in Sources */,
 				EA33282A290F1EE900F4573D /* AppDelegate.swift in Sources */,
 				EA33285D290F2AD000F4573D /* BiochainSignupViewController.swift in Sources */,
 				EA332834290F1EE900F4573D /* biochain.xcdatamodeld in Sources */,
+				EA33285F290F8BB900F4573D /* MyBioTableViewController.swift in Sources */,
+				EA332863290F8BF900F4573D /* AddBlockTableViewController.swift in Sources */,
+				EA332861290F8BD400F4573D /* MyBiochainTableViewController.swift in Sources */,
 				EA33282C290F1EE900F4573D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +471,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -483,6 +500,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +510,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
