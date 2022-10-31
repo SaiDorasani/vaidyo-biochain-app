@@ -17,6 +17,7 @@
 		EA332844290F1EEB00F4573D /* biochainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332843290F1EEB00F4573D /* biochainTests.swift */; };
 		EA33284E290F1EEB00F4573D /* biochainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33284D290F1EEB00F4573D /* biochainUITests.swift */; };
 		EA332850290F1EEB00F4573D /* biochainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33284F290F1EEB00F4573D /* biochainUITestsLaunchTests.swift */; };
+		EA33285D290F2AD000F4573D /* BiochainSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EA332849290F1EEB00F4573D /* biochainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = biochainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA33284D290F1EEB00F4573D /* biochainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biochainUITests.swift; sourceTree = "<group>"; };
 		EA33284F290F1EEB00F4573D /* biochainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biochainUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiochainSignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				EA332837290F1EEB00F4573D /* LaunchScreen.storyboard */,
 				EA33283A290F1EEB00F4573D /* Info.plist */,
 				EA332832290F1EE900F4573D /* biochain.xcdatamodeld */,
+				EA33285C290F2AD000F4573D /* BiochainSignupViewController.swift */,
 			);
 			path = biochain;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				EA33282E290F1EE900F4573D /* ViewController.swift in Sources */,
 				EA33282A290F1EE900F4573D /* AppDelegate.swift in Sources */,
+				EA33285D290F2AD000F4573D /* BiochainSignupViewController.swift in Sources */,
 				EA332834290F1EE900F4573D /* biochain.xcdatamodeld in Sources */,
 				EA33282C290F1EE900F4573D /* SceneDelegate.swift in Sources */,
 			);
