@@ -42,7 +42,7 @@ class MyBioTableViewController: UITableViewController {
        self.refreshControl?.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
         myBioTableView.delegate = self
         myBioTableView.dataSource = self
-        
+       // loadData();
 //       refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
 //       refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
 //       tableView.addSubview(refreshControl) // not required when using UITableViewController
@@ -105,10 +105,10 @@ class MyBioTableViewController: UITableViewController {
    //        cell.detailTextLabel?.text = country.isoCode
    //        cell.imageView?.image = UIImage(named: country.isoCode)
            if let responseDictionary = responseDictionaryArray.first {
-               cell3.height.text = (responseDictionary["height"] as? String)
+               cell3.height.text = (responseDictionary["height"]  as? String)
                cell3.weight.text = responseDictionary["weight"] as? String
                cell3.bp.text = responseDictionary["bp"] as? String
-               cell3.oxygenPercent.text = responseDictionary["oxygenPercent"] as? String
+               cell3.oxygenPercent.text = responseDictionary["oxygen"] as? String
             
            }
             cell3.isHidden = false;
@@ -135,7 +135,9 @@ class MyBioTableViewController: UITableViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "http://localhost:8080/biochain/patients/saireddyd")!
+//        let url = URL(string: "http://localhost:8080/biochain/patients/saireddyd")!
+        let url = URL(string: "http://192.168.68.121:8080/biochain/patients/saidorasani")!
+    
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
 
@@ -170,6 +172,7 @@ class MyBioTableViewController: UITableViewController {
 
         task.resume()
     } //enddata load
+    
 }
 
 

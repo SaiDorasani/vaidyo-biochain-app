@@ -14,7 +14,7 @@ class BiochainSignupViewController: UIViewController {
     @IBOutlet weak var dateOfBirth: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var password: UITextField!
-    
+    @IBOutlet weak var gender: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,7 +23,8 @@ class BiochainSignupViewController: UIViewController {
     @IBAction func signupLogin(_ sender: Any) {
         
         // prepare json data
-        let json: [String: Any] = ["username": username.text,"password" : password.text, "firstName" : firstName.text, "lastName" : lastName.text, "dateOfBirth" : dateOfBirth.text]
+        let json: [String: Any] = ["username": username.text,"password" : password.text, "firstName" : firstName.text, "lastName" : lastName.text, "dateOfBirth" : dateOfBirth.text, "gender" : gender.text
+        ]
 
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
@@ -41,6 +42,13 @@ class BiochainSignupViewController: UIViewController {
                 print(error?.localizedDescription ?? "No data")
                 return
             }
+            
+            //
+           
+            
+            //
+          
+            
             let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
             if let responseJSON = responseJSON as? [String: Any] {
                 print(responseJSON)
@@ -49,9 +57,10 @@ class BiochainSignupViewController: UIViewController {
 
         task.resume()
         
-        
-        let mainTabBarController = storyboard?.instantiateViewController(withIdentifier: "MainTabBarController");
-        UIApplication.shared.windows.first?.rootViewController = mainTabBarController;
+            let mainTabBarController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabBarController");
+            UIApplication.shared.windows.first?.rootViewController = mainTabBarController;
+
+
     }
     
 }
