@@ -22,6 +22,7 @@
 		EA332861290F8BD400F4573D /* MyBiochainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */; };
 		EA332863290F8BF900F4573D /* AddBlockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */; };
 		EA332865290F8C1800F4573D /* MyRewardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */; };
+		EA4FA821291169F000C8FDA4 /* AddRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FA820291169F000C8FDA4 /* AddRecordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBiochainTableViewController.swift; sourceTree = "<group>"; };
 		EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlockTableViewController.swift; sourceTree = "<group>"; };
 		EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRewardsTableViewController.swift; sourceTree = "<group>"; };
+		EA4FA820291169F000C8FDA4 /* AddRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				EA332860290F8BD400F4573D /* MyBiochainTableViewController.swift */,
 				EA332862290F8BF900F4573D /* AddBlockTableViewController.swift */,
 				EA332864290F8C1800F4573D /* MyRewardsTableViewController.swift */,
+				EA4FA820291169F000C8FDA4 /* AddRecordsViewController.swift */,
 			);
 			path = biochain;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				EA33282A290F1EE900F4573D /* AppDelegate.swift in Sources */,
 				EA33285D290F2AD000F4573D /* BiochainSignupViewController.swift in Sources */,
 				EA332834290F1EE900F4573D /* biochain.xcdatamodeld in Sources */,
+				EA4FA821291169F000C8FDA4 /* AddRecordsViewController.swift in Sources */,
 				EA33285F290F8BB900F4573D /* MyBioTableViewController.swift in Sources */,
 				EA332863290F8BF900F4573D /* AddBlockTableViewController.swift in Sources */,
 				EA332861290F8BD400F4573D /* MyBiochainTableViewController.swift in Sources */,
