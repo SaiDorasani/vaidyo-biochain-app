@@ -89,7 +89,23 @@ class MyBiochainTableViewController: UITableViewController {
             cell.data.text = responseDictionary["data"] as! String
             cell.ch.text =  responseDictionary["hash"] as! String
             cell.ts.text = String(responseDictionary["timeStamp"] as! Int)
-            viewCell = cell;
+        
+             cell.backgroundColor = UIColor.white
+             cell.layer.borderColor = UIColor.gray.cgColor
+             cell.layer.borderWidth = 2
+             cell.layer.cornerRadius = 8
+        
+        let cornerRadius:CGFloat = 5.0
+        let sectionCount = 1
+        let shapeLayer = CAShapeLayer()
+        
+        var bounds = cell.bounds
+                        bounds.size.height -= 1.0
+        let bezierPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: cornerRadius,height: cornerRadius))
+        shapeLayer.path = bezierPath.cgPath
+                        cell.layer.mask = shapeLayer
+         
+             viewCell = cell;
         
 
 

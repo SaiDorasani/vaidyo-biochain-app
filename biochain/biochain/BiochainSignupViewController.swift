@@ -17,9 +17,14 @@ class BiochainSignupViewController: UIViewController {
     @IBOutlet weak var gender: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self.view,
+        action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
 
+   
     @IBAction func signupLogin(_ sender: Any) {
         
         // prepare json data
@@ -29,7 +34,7 @@ class BiochainSignupViewController: UIViewController {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         // create post request
-        let url = URL(string: "http://localhost:8080/biochain/signup")!
+        let url = URL(string: "http://192.168.68.121:8080/biochain/signup")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
 
